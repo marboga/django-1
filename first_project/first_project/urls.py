@@ -17,7 +17,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
 urlpatterns = patterns('',
-    url(r'^$', include('apps.home.urls'))
+    url(r'^$', include('apps.home.urls')),
     url(r'^quiz/', include('apps.quiz.urls')),
     url(r'^admin/', (admin.site.urls)),
 )
