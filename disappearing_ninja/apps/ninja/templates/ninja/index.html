@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>my first template in Django</title>
+      {% load staticfiles %}
+      <link rel="stylesheet" href="{% static 'ninja/style.css' %}" media="screen">
+   </head>
+   <body>
+      <h1>Hello, Ninjas!!</h1>
+      <!-- {%csrf_token%} -->
+      {% autoescape off %}
+      {% if color %}
+
+            {{color}}
+
+      {% endif %}
+      {% endautoescape %}
+
+   </body>
+</html>
